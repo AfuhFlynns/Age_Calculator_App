@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Age app</title>
+</head>
+<body>
+  <div id="Container">
+    <h1></h1>
+    <form action="submit" id="form">
+    <div id="inputArea">
+    <span>
+    <label for="day">DAY</label>
+    <input type="text" maxlength="2" id="Inputday" placeholder="DD">
+    <pre  id="day-error" class="error-message">Required field.</pre>
+    </span>
+    <span>
+    <label for="month">MONTH</label>
+    <input type="text" maxlength="2" id="Inputmonth" placeholder="MM">
+    <pre id="month-error" class="error-message">Required field.</pre>
+    </span>
+    <span>
+    <label for="year">YEAR</label>
+    <input type="text" maxlength="4" id="Inputyear" placeholder="YYYY">
+    <pre id="year-error" class="error-message">Required field.</pre>
+    </span>
+    </div>
+    <button type="submit"  id="btn"><img src="./assets/images/icon-arrow.svg" alt=""></button>
+    </form>
+    <hr>
+    <div id="outContainer">
+    <div id="outPut">
+    <span id="outPutYear" class="dot">--</span><p>years</p>
+    </div>
+    <div id="outPut">
+    <span id="outPutMonth" class="dot">--</span><p>months</p>
+    </div>
+    <div id="outPut">
+    <span id="outPutDay" class="dot">--</span><p>days</p>
+    </div>
+    </div>
+  </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: poppins,sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0ebe8;
+    font-size: 11px; 
+    width:100vw;
+    height:100vh;
+}
+#Container{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 1rem 1rem 8rem 1rem;
+    width:40vw;
+    height: 68vh;
+    gap:35px;
+    padding:1rem;
+}
+h1{
+    font-size:large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-self: center;
+    align-self: center;
+    font-size: large;
+    font-weight: bolder;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+span{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    gap: 0.1rem;
+    font-weight: bold;
+    font-size: 10px;
+}
+input{
+    width: 8vw;
+    height: 1cm;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight:bolder;
+    border-color: rgba(0, 0, 0, 0.2);
+    padding:5px 10px;
+}
+input::placeholder{
+    color:rgb(185, 185, 185);
+    font-weight: bold;
+}
+#inputArea{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: flex-start;
+    gap: 4rem;
+}
+pre{
+    font-size: small;
+    font-weight: semi-bold;
+    line-height: 8px;
+    word-spacing: 2px;
+    letter-spacing: -1px;
+    padding-top:0.3rem;
+}
+button{
+    position: fixed;
+    right: 27rem;
+    top:16rem;
+    background-color: hsl(268, 63%, 51%);
+    border: none;
+    border-radius: 50%;
+    padding: 0.4rem 0.4rem;
+}
+button:hover{
+    cursor: pointer;
+    padding: 0.3rem 0.3rem;
+    background-color: hsl(268, 51%, 61%);
+}
+.dot{
+    color: hsl(268, 99%, 34%);
+    font-size: 50px;
+    font-weight: bolder;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+hr{
+    margin-top:1.2rem;
+    border-color: rgba(59, 59, 59, 0.1);
+}
+#outContainer{
+    gap: 2rem;
+}
+#outPut{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 54px;
+    font-weight: bolder;
+    line-height: 4rem;
+    font-style: italic;
+}
+
+.error-message{
+    display: none;
+    color: red;
+}
+
+@media screen and (max-width: 900px) {
+    body{
+    font-size: 18px; 
+    width:none;
+    height:none;
+}
+    #Container{
+    border-radius: 1rem 1rem 8rem 1rem;
+    width:96vw;
+    height: 60vh;
+    gap:35px;
+    padding:4rem;
+}
+h1{
+    font-size:large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-self: center;
+    align-self: center;
+    font-size: large;
+    font-weight: bolder;
+}
+}
